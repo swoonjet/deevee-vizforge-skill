@@ -1,0 +1,63 @@
+{
+  "paper": "#f9f7ef",
+  "ink": "#171b22",
+  "emphasis": "#af1500",
+  "categorical": [
+    "#004e8c",
+    "#ac3700",
+    "#007951",
+    "#2a8ec1",
+    "#a45582",
+    "#be7900"
+  ],
+  "categoricalNames": [
+    "blue",
+    "vermillion",
+    "green",
+    "sky",
+    "mauve",
+    "amber"
+  ],
+  "sequential": [
+    "#f9f7ef",
+    "#c1cdb8",
+    "#7ca796",
+    "#327e86",
+    "#1d5a68",
+    "#0a3848",
+    "#001929"
+  ],
+  "diverging": [
+    "#ac3700",
+    "#c06f37",
+    "#d0a06f",
+    "#e1cead",
+    "#f9f7ef",
+    "#bfcfb6",
+    "#71ab9a",
+    "#118294",
+    "#004e8c"
+  ],
+  "ambientDark": {
+    "paper": "#100a03",
+    "ink": "#ece7df",
+    "diverging": [
+      "#e57255",
+      "#a85830",
+      "#6e3e16",
+      "#3b2408",
+      "#100a03",
+      "#2b2f13",
+      "#2f5c3f",
+      "#158b88",
+      "#43b2e1"
+    ]
+  },
+  "expressive": {
+    "inks": [
+      "blue",
+      "vermillion"
+    ],
+    "multiply": "#001100"
+  }
+}

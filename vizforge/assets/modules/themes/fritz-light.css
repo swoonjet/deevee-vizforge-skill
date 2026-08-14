@@ -1,0 +1,128 @@
+/* assets/modules/themes/fritz-light.css
+ *
+ * Intercept (/fritz) LIGHT-MODE theme for VizForge portable modules.
+ *
+ * This file is the entire re-skin. No module code changes — the modules read
+ * --vf-* custom properties, so a theme is a token mapping and nothing else.
+ * That was the point of building theming in before branding.
+ *
+ * Source of truth: Figma kBo4gZ2BvhqHCtqTVkBbYq via the brand kit's
+ * tokens.css + KNOWLEDGE.md §1-8. Light-mode semantic mapping follows the
+ * established precedent in .fritz/recipes/presentations/template.html
+ * (field = Halo/200, card = Halo/100, ink = Carbon/500).
+ *
+ * ===========================================================================
+ * THE RULE THAT SHAPES THIS WHOLE FILE: 100-level channels are MARK colours,
+ * not text colours.
+ *
+ * Measured against #ffffff (and against the #f5f7ff field, which is ~7% worse):
+ *
+ *   flarepop-100  #ff00e5   3.29:1   text FAIL   graphic pass
+ *   coolsweep-100 #1a7aff   3.98:1   text FAIL   graphic pass
+ *   wiretree-100  #00d862   1.91:1   text FAIL   graphic FAIL
+ *   flarepop-300  #a8008c   6.90:1   text PASS
+ *   coolsweep-300 #1251ad   7.48:1   text PASS
+ *   wiretree-300  #008f42   4.19:1   text fail   graphic pass
+ *
+ * WCAG needs 4.5:1 for normal text but only 3:1 for graphical objects, so a
+ * chart stroke may use a 100-level channel while a label beside it may not.
+ * Wiretree is the exception that proves the rule: #00d862 fails even the
+ * graphics threshold on a light field, so the green series uses wiretree-300.
+ * ===========================================================================
+ *
+ * Channel roles are FIXED and do not rotate with content (KNOWLEDGE §1):
+ * Flarepop primary / Coolsweep secondary "scan" / Wiretree tertiary. Since
+ * Coolsweep is explicitly the data-and-scan channel, it leads the chart field
+ * and Flarepop is held back for the story peak — the same law the Fritz B2B
+ * gallery runs on ("one blue/ink family for the field, Flarepop only where the
+ * story peaks"). A multi-hue categorical ramp reads as confetti; do not build
+ * one here.
+ */
+
+.vf-theme-fritz-light,
+:root.vf-theme-fritz-light {
+  /* --- Intercept raw tokens (verbatim names from Figma) --- */
+  --flarepop-100: #ff00e5;
+  --flarepop-200: #df00be;
+  --flarepop-300: #a8008c;
+  --coolsweep-100: #1a7aff;
+  --coolsweep-300: #1251ad;
+  --coolsweep-400: #0d3d85;
+  --wiretree-300: #008f42;
+  --halo-100: #ffffff;
+  --halo-200: #f5f7ff;
+  --halo-300: #e6e9f5;
+  --carbon-100: #3a3a4a;
+  --carbon-500: #0a0a0f;
+
+  /* --- Surfaces + ink --- */
+  --vf-paper: var(--halo-100);
+  --vf-ink: var(--carbon-500);
+  --vf-muted: var(--carbon-100);
+  --vf-hair: var(--halo-300);
+  --vf-hair2: rgba(10, 10, 15, 0.06);
+
+  /* --- Emphasis ---
+   * Flarepop is the brand's peak. As TEXT it must be the 300 step; the
+   * modules use --vf-accent for both a mark (the leading bar, the latest-value
+   * dot) and its adjacent label, so the AA-safe step is the correct single
+   * value here. Pure #ff00e5 stays available as --vf-accent-mark for
+   * fill-only use where no text sits on it. */
+  --vf-accent: var(--flarepop-300);
+  --vf-accent-mark: var(--flarepop-100);
+
+  /* --- The field mark ---
+   * Every mark that is NOT the emphasis, in a single-hue module. This is the
+   * line above made operative: Coolsweep is the data-and-scan channel, so the
+   * chart field is Coolsweep and Flarepop appears once, at the peak. Solid
+   * rather than a knocked-back tint — the de-emphasis comes from hue (deep navy
+   * against hot magenta), not from washing the marks out. #0d3d85 is 11.4:1 on
+   * white, so the field clears the graphics threshold with room to spare, which
+   * a 52%-opacity version of it would not have. */
+  --vf-mark: var(--coolsweep-400);
+  --vf-mark-opacity: 1;
+
+  /* --- Categorical series ---
+   * Blue/ink family for the field, Flarepop at the peak only. Ordered so a
+   * 2-series chart reads blue vs. deep-blue, and Flarepop appears only once a
+   * third series genuinely needs distinguishing. */
+  --vf-cat-1: var(--coolsweep-100);
+  --vf-cat-2: var(--coolsweep-400);
+  --vf-cat-3: var(--flarepop-300);
+  --vf-cat-4: var(--wiretree-300);
+  --vf-cat-5: var(--coolsweep-300);
+  --vf-cat-6: var(--carbon-100);
+
+  /* --- Type ---
+   * Instrument Sans display, Inter body. Geist Mono is MINIMISED per Jon
+   * (2026-07-09): it is a data voice, not a label voice. The modules use
+   * --vf-font-figures for the source line and numeric axis labels only, which
+   * is the one sanctioned fine-print data level. Axis category labels and the
+   * legend are Inter via --vf-font-label. */
+  --vf-font-headline: 'Instrument Sans', system-ui, sans-serif;
+  --vf-font-label: 'Inter', system-ui, sans-serif;
+  --vf-font-figures: 'Geist Mono', ui-monospace, monospace;
+}
+
+/* Dark-surface variant, for a module dropped onto Carbon. Kept in the same
+ * file because the channel roles must not diverge between modes — only the
+ * neutral mapping flips, and Flarepop may go pure since it is no longer
+ * fighting a white field. */
+.vf-theme-fritz-dark {
+  --vf-paper: #0a0a0f;
+  --vf-ink: #ffffff;
+  --vf-muted: #b8bed1;
+  --vf-hair: rgba(255, 255, 255, 0.18);
+  --vf-hair2: rgba(255, 255, 255, 0.08);
+  --vf-accent: #ff00e5;
+  --vf-accent-mark: #ff00e5;
+  --vf-cat-1: #1a7aff;
+  --vf-cat-2: #ff00e5;
+  --vf-cat-3: #00d862;
+  --vf-cat-4: #00d7f2;
+  --vf-cat-5: #9359fe;
+  --vf-cat-6: #d1d6e6;
+  --vf-font-headline: 'Instrument Sans', system-ui, sans-serif;
+  --vf-font-label: 'Inter', system-ui, sans-serif;
+  --vf-font-figures: 'Geist Mono', ui-monospace, monospace;
+}

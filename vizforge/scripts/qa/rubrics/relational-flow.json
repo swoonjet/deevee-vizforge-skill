@@ -1,0 +1,69 @@
+{
+  "family": "relational-flow",
+  "version": 1,
+  "fields": [
+    {
+      "id": "headlineClaim",
+      "prompt": "Transcribe the exact text of the piece's <h1> headline, verbatim, in quotation marks.",
+      "evidenceType": "quote",
+      "required": true,
+      "crossCheck": null
+    },
+    {
+      "id": "headlineSupportedByMarks",
+      "prompt": "State specifically what the chart marks show (direction, magnitude, or pattern) and whether that matches the headline's claim. Cite the visual evidence itself, not a restatement of the headline.",
+      "evidenceType": "string",
+      "required": true,
+      "crossCheck": null
+    },
+    {
+      "id": "axisDomain",
+      "prompt": "Cite the visible axis domain(s) exactly as rendered from the tick labels (e.g. \"x: 1958-2026, y: 303-430 ppm\"). Read the labels; do not estimate.",
+      "evidenceType": "string",
+      "required": true,
+      "crossCheck": null
+    },
+    {
+      "id": "paletteUsed",
+      "prompt": "List every distinct hex color you can identify in the piece as rendered (marks, emphasis, text, background), as a list of hex codes.",
+      "evidenceType": "hexList",
+      "required": true,
+      "crossCheck": { "check": "palette", "path": "matchedTokens", "relation": "subsetOf" }
+    },
+    {
+      "id": "seriesCount",
+      "prompt": "Count the number of distinct data series/lines/mark-groups visible in the piece. Report as an integer.",
+      "evidenceType": "int",
+      "required": true,
+      "crossCheck": null
+    },
+    {
+      "id": "emphasisColorUsage",
+      "prompt": "Name the ONE emphasis color used in the piece (its hex code) and state exactly where it appears (which mark, label, or element).",
+      "evidenceType": "string",
+      "required": true,
+      "crossCheck": null
+    },
+    {
+      "id": "attributionLine",
+      "prompt": "Transcribe the exact 'Source:' attribution line verbatim, in quotation marks.",
+      "evidenceType": "quote",
+      "required": true,
+      "crossCheck": null
+    },
+    {
+      "id": "emphasisRibbonFlow",
+      "prompt": "Name which SINGLE ribbon/link carries the piece's emphasis color, and state exactly what flow it represents (the source node/group and the target node/group it connects).",
+      "evidenceType": "string",
+      "required": true,
+      "crossCheck": null
+    },
+    {
+      "id": "flowDirectionEncoding",
+      "prompt": "State how flow direction (source vs. target) is visually encoded in this piece (e.g. ribbon twist/taper, arrowhead, color gradient, chord-end asymmetry) and how a viewer reads which end is the source.",
+      "evidenceType": "string",
+      "required": true,
+      "crossCheck": null
+    }
+  ]
+}

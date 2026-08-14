@@ -1,0 +1,40 @@
+{
+  "name": "vizforge",
+  "version": "2.0.0",
+  "description": "Given any dataset and intent, VizForge reliably produces a visualization that is correct (honest encoding) and strikingly beautiful (hi-fi craft).",
+  "main": "index.js",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --test scripts/tests/smoke/*.test.mjs",
+    "verify": "node --test --test-concurrency=1 scripts/tests/smoke/*.test.mjs scripts/tests/integration/*.test.mjs",
+    "gate": "node scripts/qa/gate.mjs",
+    "build:gallery": "node scripts/build-gallery.mjs",
+    "build:gallery-thumbs": "node scripts/build-gallery-thumbs.mjs",
+    "start": "node app/server.mjs",
+    "app": "node app/server.mjs"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@bjornlu/colorblind": "1.0.3",
+    "@observablehq/plot": "0.6.17",
+    "colorjs.io": "0.6.1",
+    "culori": "4.0.2",
+    "d3": "7.9.0",
+    "d3-sankey": "0.12.3",
+    "express": "^5.2.1",
+    "multer": "2.2.0",
+    "papaparse": "^5.5.4",
+    "pixelmatch": "7.2.0",
+    "playwright": "1.61.1",
+    "pngjs": "7.0.0",
+    "roughjs": "^4.6.6",
+    "subset-font": "2.5.0"
+  },
+  "devDependencies": {
+    "htmx.org": "^2.0.10",
+    "image-size": "2.0.2"
+  }
+}

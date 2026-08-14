@@ -1,0 +1,69 @@
+{
+  "family": "line-area",
+  "version": 1,
+  "fields": [
+    {
+      "id": "headlineClaim",
+      "prompt": "Transcribe the exact text of the piece's <h1> headline, verbatim, in quotation marks.",
+      "evidenceType": "quote",
+      "required": true,
+      "crossCheck": null
+    },
+    {
+      "id": "headlineSupportedByMarks",
+      "prompt": "State specifically what the chart marks show (direction, magnitude, or pattern) and whether that matches the headline's claim. Cite the visual evidence itself, not a restatement of the headline.",
+      "evidenceType": "string",
+      "required": true,
+      "crossCheck": null
+    },
+    {
+      "id": "axisDomain",
+      "prompt": "Cite the visible axis domain(s) exactly as rendered from the tick labels (e.g. \"x: 1958-2026, y: 303-430 ppm\"). Read the labels; do not estimate.",
+      "evidenceType": "string",
+      "required": true,
+      "crossCheck": null
+    },
+    {
+      "id": "paletteUsed",
+      "prompt": "List every distinct hex color you can identify in the piece as rendered (marks, emphasis, text, background), as a list of hex codes.",
+      "evidenceType": "hexList",
+      "required": true,
+      "crossCheck": { "check": "palette", "path": "matchedTokens", "relation": "subsetOf" }
+    },
+    {
+      "id": "seriesCount",
+      "prompt": "Count the number of distinct data series/lines/mark-groups visible in the piece. Report as an integer.",
+      "evidenceType": "int",
+      "required": true,
+      "crossCheck": null
+    },
+    {
+      "id": "emphasisColorUsage",
+      "prompt": "Name the ONE emphasis color used in the piece (its hex code) and state exactly where it appears (which mark, label, or element).",
+      "evidenceType": "string",
+      "required": true,
+      "crossCheck": null
+    },
+    {
+      "id": "attributionLine",
+      "prompt": "Transcribe the exact 'Source:' attribution line verbatim, in quotation marks.",
+      "evidenceType": "quote",
+      "required": true,
+      "crossCheck": null
+    },
+    {
+      "id": "baselineHandling",
+      "prompt": "Transcribe the rendered baseline-disclosure text verbatim if one is visible on the piece. If the axis is a true zero baseline instead, cite the literal string \"zero-baseline\".",
+      "evidenceType": "quote",
+      "required": true,
+      "crossCheck": null
+    },
+    {
+      "id": "lineCountLegible",
+      "prompt": "Is every line/series visually distinguishable at a glance by color or label? Answer false if more than 6 series are present without clear per-series labeling — this is a CAUTION condition, not a hard failure.",
+      "evidenceType": "boolean",
+      "required": true,
+      "crossCheck": null
+    }
+  ]
+}

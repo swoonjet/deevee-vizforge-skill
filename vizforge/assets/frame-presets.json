@@ -1,0 +1,6 @@
+{
+  "editorial": { "width": 1200, "height": 750,  "deviceScaleFactor": 2, "kind": "static" },
+  "square":    { "width": 1080, "height": 1080, "deviceScaleFactor": 2, "kind": "static" },
+  "story":     { "width": 1080, "height": 1920, "deviceScaleFactor": 2, "kind": "static" },
+  "video":     { "width": 1920, "height": 1080, "deviceScaleFactor": 2, "fps": 30, "kind": "animated" }
+}

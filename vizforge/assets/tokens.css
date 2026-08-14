@@ -1,0 +1,103 @@
+/* GENERATED from scripts/design/tokens.mjs — edit that, not this. */
+/*
+ * Structural craft-law note: no divider/rule utility classes exist on
+ * purpose. Do not add `.divider`, `.hr`, or `border-top` "separator"
+ * utilities here — separation is by space, weight, and alignment only.
+ * See docs/craft-law.md.
+ */
+:root {
+  /* Typography — CRAFT-01 */
+  --font-headline: "Space Grotesk", sans-serif;
+  --font-label: "Inter", sans-serif;
+  --font-figures: "IBM Plex Mono", monospace;
+  --size-headline: 2.25rem;
+  --size-dek: 1.125rem;
+  --size-axis: 0.8125rem;
+  --size-annotation: 0.75rem;
+  --size-figures: 0.8125rem;
+  --size-source: 0.6875rem;
+  --weight-headline: 700;
+  --weight-dek: 400;
+  --weight-axis: 400;
+  --weight-annotation: 400/600;
+  --weight-figures: 400;
+  --weight-source: 400;
+  --line-headline: 1.1;
+  --line-dek: 1.45;
+  --line-axis: 1.3;
+  --line-annotation: 1.3;
+  --line-figures: 1.3;
+  --line-source: 1.4;
+  --letter-headline: -0.01em;
+
+  /* Poster-scale display steps — EXPR-01, Phase 15 (dramatic-scale-contrast/typographic-bar) */
+  --size-poster-1: 4.5rem;
+  --size-poster-2: 7rem;
+
+  /* Color — CRAFT-02: editorial-light canvas, warm paper + near-black ink */
+  --color-paper: oklch(97.50% 0.0100 95.00);
+  --color-ink: oklch(22.00% 0.0150 265.00);
+  --color-emphasis: oklch(48.00% 0.1900 35.00);
+  --cat-1: oklch(41.19% 0.1313 244.05); /* blue */
+  --cat-2: oklch(50.13% 0.1705 47.51); /* vermillion */
+  --cat-3: oklch(49.98% 0.1295 165.46); /* green */
+  --cat-4: oklch(61.45% 0.1174 236.18); /* sky */
+  --cat-5: oklch(55.94% 0.1177 346.32); /* mauve */
+  --cat-6: oklch(63.27% 0.1576 76.77); /* amber */
+
+  /* Sequential ramp — house OKLCH, 7 stops light -> dark */
+  --seq-1: #f9f7ef;
+  --seq-2: #c1cdb8;
+  --seq-3: #7ca796;
+  --seq-4: #327e86;
+  --seq-5: #1d5a68;
+  --seq-6: #0a3848;
+  --seq-7: #001929;
+
+  /* Diverging ramp — house OKLCH, 9 stops vermillion -> paper -> blue */
+  --div-1: #ac3700;
+  --div-2: #c06f37;
+  --div-3: #d0a06f;
+  --div-4: #e1cead;
+  --div-5: #f9f7ef;
+  --div-6: #bfcfb6;
+  --div-7: #71ab9a;
+  --div-8: #118294;
+  --div-9: #004e8c;
+
+  /* Spacing — 8px base scale */
+  --space-1: 0.5rem;
+  --space-2: 1rem;
+  --space-3: 1.5rem;
+  --space-4: 2rem;
+  --space-5: 2.5rem;
+  --space-6: 3rem;
+  --space-7: 3.5rem;
+  --space-8: 4rem;
+
+  /* Motion — CRAFT-05 / MOTION-01: sine ease-in-out only, unhurried durations */
+  --ease-sine-in-out: cubic-bezier(0.37, 0, 0.63, 1);
+  --duration-unhurried: 1400ms;
+  --duration-slow: 2400ms;
+}
+
+/*
+ * Tier-3 "ambient-sculpture" family SCOPED dark variant (Phase 4,
+ * 04-03-PLAN.md) — NOT a general dark mode. Light stays the default
+ * everywhere else. Apply the `tier3-ambient` class to a piece's root
+ * element only; every descendant inherits the overridden custom
+ * properties normally.
+ */
+.tier3-ambient {
+  --color-paper: oklch(15.00% 0.0200 80.00);
+  --color-ink: oklch(93.00% 0.0120 80.00);
+  --div-1: #e57255;
+  --div-2: #a85830;
+  --div-3: #6e3e16;
+  --div-4: #3b2408;
+  --div-5: #100a03;
+  --div-6: #2b2f13;
+  --div-7: #2f5c3f;
+  --div-8: #158b88;
+  --div-9: #43b2e1;
+}
