@@ -1,0 +1,25 @@
+company,sector,fy,revenue_bn,growth_pct,fcf_margin_pct
+Salesforce,CRM & Marketing,FY2025,37.9,9,33
+Adobe,CRM & Marketing,FY2024,21.5,11,36
+HubSpot,CRM & Marketing,CY2024,2.63,21,19
+Veeva,CRM & Marketing,FY2025,2.75,16,40
+ServiceNow,Workflow & ITSM,CY2024,11.0,22,31
+Workday,Workflow & ITSM,FY2025,8.45,16,28
+Atlassian,Workflow & ITSM,FY2024,4.36,23,32
+Monday.com,Workflow & ITSM,CY2024,0.97,33,30
+Asana,Workflow & ITSM,FY2025,0.72,11,2
+Snowflake,Data & Analytics,FY2025,3.63,29,26
+Datadog,Data & Analytics,CY2024,2.68,26,31
+MongoDB,Data & Analytics,FY2025,2.01,19,6
+Confluent,Data & Analytics,CY2024,0.96,24,3
+Palantir,Data & Analytics,CY2024,2.87,29,40
+CrowdStrike,Security,FY2025,3.95,29,27
+Zscaler,Security,FY2024,2.17,34,27
+Okta,Security,FY2025,2.61,15,25
+Cloudflare,Security,CY2024,1.67,29,10
+GitLab,DevOps & Infra,FY2025,0.76,31,16
+Twilio,DevOps & Infra,CY2024,4.46,7,15
+Samsara,DevOps & Infra,FY2025,1.25,33,9
+Shopify,Commerce,CY2024,8.88,26,18
+Zoom,Collaboration,FY2025,4.67,3,38
+DocuSign,Collaboration,FY2025,2.98,8,31

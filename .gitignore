@@ -1,0 +1,5 @@
+node_modules/
+*.log
+.DS_Store
+# generated output — `deevee gallery` and `deevee make` write into the cwd
+deevee-gallery.html

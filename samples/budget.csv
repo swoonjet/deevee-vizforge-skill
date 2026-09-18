@@ -1,0 +1,28 @@
+category,line_item,plan_musd,actual_musd
+Cloud & infrastructure,Compute,11.2,12.8
+Cloud & infrastructure,Storage,6.4,6.1
+Cloud & infrastructure,Networking,4.8,4.9
+Cloud & infrastructure,Observability,3.1,3.9
+Cloud & infrastructure,FinOps tooling,1.5,1.1
+Software licenses,Productivity suite,6.8,6.8
+Software licenses,CRM,5.4,5.9
+Software licenses,ERP,5.1,4.6
+Software licenses,Collaboration,2.9,3.2
+Software licenses,Design & creative,1.8,1.6
+Security,Endpoint & EDR,3.4,3.8
+Security,Identity & access,3.1,3.5
+Security,Cloud security,2.6,3.1
+Security,GRC & audit,1.7,1.5
+Security,Awareness training,0.9,0.7
+Data & AI,AI platforms & copilots,5.2,7.4
+Data & AI,Data warehouse,3.3,3.6
+Data & AI,Pipelines & ETL,2.1,2.3
+Data & AI,BI & analytics,1.9,1.7
+IT services,Managed services,5.6,5.2
+IT services,Consulting,3.8,4.6
+IT services,Implementation,2.4,2.9
+End-user compute,Laptops & devices,4.9,4.4
+End-user compute,Mobile & MDM,2.2,2.1
+End-user compute,Support desk,2.6,2.8
+Telecom,Connectivity,3.6,3.4
+Telecom,Contact center,2.3,2.0

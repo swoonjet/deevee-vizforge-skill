@@ -1,0 +1,23 @@
+Fonts bundled in assets/fonts/fonts-inline.css
+==============================================
+
+Three families are base64-inlined into that stylesheet so a rasterized export
+resolves real type with no network request. All three are licensed under the
+SIL Open Font License, Version 1.1 — the full text is in OFL-1.1.txt beside
+this file. The copyright lines below are the ones recorded in each font's own
+metadata.
+
+  Space Grotesk
+    Copyright 2020 The Space Grotesk Project Authors
+    https://github.com/floriankarsten/space-grotesk
+
+  Inter
+    Copyright 2016 The Inter Project Authors
+    https://github.com/rsms/inter
+
+  IBM Plex Mono
+    Copyright 2017 IBM Corp. All rights reserved.
+    https://github.com/IBM/plex
+
+None of the three is used as a Reserved Font Name here, and none has been
+modified beyond subsetting for size.

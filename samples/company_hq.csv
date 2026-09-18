@@ -1,0 +1,29 @@
+company,city,country,lat,lon,mcap_tn,sector
+Nvidia,Santa Clara,US,37.35,-121.96,3.5,Semiconductors
+Apple,Cupertino,US,37.32,-122.03,3.4,Hardware & Devices
+Microsoft,Redmond,US,47.67,-122.12,3.2,Software & Cloud
+Alphabet,Mountain View,US,37.42,-122.08,2.2,Software & Cloud
+Amazon,Seattle,US,47.61,-122.33,2.1,Software & Cloud
+Meta,Menlo Park,US,37.45,-122.18,1.5,Software & Cloud
+Tesla,Austin,US,30.27,-97.74,1.1,Hardware & Devices
+TSMC,Hsinchu,TW,24.81,120.97,0.95,Semiconductors
+Broadcom,Palo Alto,US,37.44,-122.14,0.9,Semiconductors
+Oracle,Austin,US,30.27,-97.74,0.5,Software & Cloud
+Tencent,Shenzhen,CN,22.54,114.06,0.45,Software & Cloud
+Netflix,Los Gatos,US,37.23,-121.96,0.4,Software & Cloud
+Samsung,Suwon,KR,37.26,127.03,0.35,Hardware & Devices
+ASML,Veldhoven,NL,51.42,5.4,0.35,Semiconductors
+SAP,Walldorf,DE,49.29,8.64,0.3,Software & Cloud
+Salesforce,San Francisco,US,37.77,-122.42,0.27,Software & Cloud
+Cisco,San Jose,US,37.34,-121.89,0.24,Hardware & Devices
+IBM,Armonk,US,41.11,-73.72,0.23,Software & Cloud
+AMD,Santa Clara,US,37.35,-121.96,0.22,Semiconductors
+Adobe,San Jose,US,37.34,-121.89,0.22,Software & Cloud
+Alibaba,Hangzhou,CN,30.27,120.16,0.22,Software & Cloud
+Accenture,Dublin,IE,53.35,-6.26,0.22,IT Services
+Qualcomm,San Diego,US,32.72,-117.16,0.19,Semiconductors
+Sony,Tokyo,JP,35.68,139.69,0.17,Hardware & Devices
+Arm,Cambridge,GB,52.2,0.12,0.15,Semiconductors
+Xiaomi,Beijing,CN,39.9,116.4,0.15,Hardware & Devices
+Intel,Santa Clara,US,37.35,-121.96,0.13,Semiconductors
+SK Hynix,Icheon,KR,37.28,127.44,0.12,Semiconductors

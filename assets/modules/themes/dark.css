@@ -1,0 +1,112 @@
+/* themes/light.css + dark variant — the portable, brand-neutral theme.
+ *
+ * A theme here is a token mapping and nothing else. No module code reads a hex
+ * value; every mark resolves a --vf-* custom property, so re-skinning the whole
+ * library means replacing this file.
+ *
+ * ===========================================================================
+ * EVERY COLOUR IN THIS FILE IS MEASURED, NOT PICKED BY EYE.
+ *
+ * Two thresholds apply and they are different: WCAG wants 4.5:1 for normal
+ * text and 3:1 for a graphical object. Modules use the same token for a mark
+ * AND for the label beside it (the leading bar and its value, the latest-value
+ * dot and its year), so every token below clears the stricter 4.5:1 bar —
+ * against the paper AND against the slightly darker plot field. That removes a
+ * whole class of "legal as a stroke, illegal as a label" mistakes rather than
+ * asking each module to keep track.
+ *
+ *   light, vs. the #f6f7fa field      dark, vs. the #0f1217 paper
+ *   cat-1 #2f6fd0   4.55             cat-1 #7fb3fb    8.71
+ *   cat-2 #0f2a4d  13.44             cat-2 #c6d5ee   12.65
+ *   cat-3 #a82d18   6.42             cat-3 #f2795a    6.84
+ *   cat-4 #0b5c45   7.45             cat-4 #37b98c    7.58
+ *   cat-5 #8a6a00   4.73             cat-5 #e8c163   10.94
+ *   cat-6 #6b7280   4.51             cat-6 #a9b2c1    8.78
+ *
+ * Both ramps were also run through protanopia, deuteranopia and tritanopia
+ * simulation: no two entries land within a perceptual distance of 45 under any
+ * of the three. A ramp that separates for most readers and collapses for one
+ * in twelve men is not a ramp that works.
+ * ===========================================================================
+ *
+ * COLOUR CARRIES STATE, NOT AN ENUMERATION. --vf-accent marks what the chart is
+ * ABOUT — the peak, the selection, the series the headline names. The field is
+ * a single restrained blue/ink family, so one accented mark reads instantly.
+ * The six-step categorical ramp exists for genuinely categorical encodings
+ * (a stacked area, a chord diagram) and is the exception, not the default:
+ * reaching for one hue per series in a chart that has a subject is what makes
+ * a picture look like confetti.
+ */
+
+.vf-theme-light,
+:root.vf-theme-light {
+  /* --- Surfaces + ink --- */
+  --vf-paper: #ffffff;
+  --vf-field: #f6f7fa;
+  --vf-ink: #101318;
+  --vf-muted: #4c5565;
+  --vf-hair: #e3e7ee;
+  --vf-hair2: rgba(16, 19, 24, 0.06);
+
+  /* --- Emphasis ---
+   * One warm hue against a cool field, so the accented mark separates by
+   * temperature as well as by value. Text-safe at 6.42:1, which is why the
+   * same token can carry the mark and its label. */
+  --vf-accent: #a82d18;
+  --vf-accent-mark: #c2410c;
+
+  /* --- The field mark ---
+   * Every mark that is NOT the emphasis, in a single-hue module. Solid deep
+   * navy rather than a knocked-back tint: the de-emphasis comes from hue
+   * (deep cool against warm rust), not from washing the marks out until they
+   * fail contrast. */
+  --vf-mark: #1d3f76;
+  --vf-mark-opacity: 1;
+
+  /* --- Categorical series --- */
+  --vf-cat-1: #2f6fd0;
+  --vf-cat-2: #0f2a4d;
+  --vf-cat-3: #a82d18;
+  --vf-cat-4: #0b5c45;
+  --vf-cat-5: #8a6a00;
+  --vf-cat-6: #6b7280;
+
+  /* --- Type ---
+   * A system stack, on purpose. An embed cannot assume network access and a
+   * 400KB webfont is not neighbourly inside someone else's page, so the
+   * portable output ships no font file and degrades to the host's own UI face.
+   * The raster path is the exception — see the --fonts flag on `deevee png`. */
+  --vf-font-headline: 'Space Grotesk', 'Instrument Sans', system-ui, sans-serif;
+  --vf-font-label: 'Inter', system-ui, sans-serif;
+  --vf-font-figures: 'IBM Plex Mono', ui-monospace, SFMono-Regular, monospace;
+}
+
+/* Dark surface. Channel ROLES do not diverge between modes — accent is still
+ * emphasis, cat-1/cat-2 are still the field family. Only the neutral mapping
+ * flips, and the chromatic steps lighten because they now sit on ink. */
+.vf-theme-dark,
+:root.vf-theme-dark {
+  --vf-paper: #0f1217;
+  --vf-field: #171b22;
+  --vf-ink: #f2f5fa;
+  --vf-muted: #a3adbe;
+  --vf-hair: rgba(242, 245, 250, 0.16);
+  --vf-hair2: rgba(242, 245, 250, 0.07);
+
+  --vf-accent: #f2795a;
+  --vf-accent-mark: #f2795a;
+
+  --vf-mark: #8fb6f2;
+  --vf-mark-opacity: 1;
+
+  --vf-cat-1: #7fb3fb;
+  --vf-cat-2: #c6d5ee;
+  --vf-cat-3: #f2795a;
+  --vf-cat-4: #37b98c;
+  --vf-cat-5: #e8c163;
+  --vf-cat-6: #a9b2c1;
+
+  --vf-font-headline: 'Space Grotesk', 'Instrument Sans', system-ui, sans-serif;
+  --vf-font-label: 'Inter', system-ui, sans-serif;
+  --vf-font-figures: 'IBM Plex Mono', ui-monospace, SFMono-Regular, monospace;
+}

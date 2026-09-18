@@ -1,0 +1,170 @@
+[
+  {
+    "id": "seats",
+    "file": "seats.csv",
+    "label": "Seats by product, six months",
+    "shows": "A small time series with a few series in it.",
+    "source": "Illustrative product telemetry — a teaching set, not measured data.",
+    "format": "csv"
+  },
+  {
+    "id": "funnel",
+    "file": "funnel.csv",
+    "label": "A demand funnel, stage to stage",
+    "shows": "A strict sequence where every stage is a subset of the one before.",
+    "source": "Illustrative funnel — a teaching set, not measured data.",
+    "format": "csv"
+  },
+  {
+    "id": "capabilities",
+    "file": "capabilities.csv",
+    "label": "Vendor scorecard, five capabilities",
+    "shows": "A vendor x attribute battery: the same measures scored for several subjects.",
+    "source": "Illustrative scorecard — a teaching set, not measured data.",
+    "format": "csv"
+  },
+  {
+    "id": "models",
+    "file": "models.csv",
+    "label": "Model line-up, four measures each",
+    "shows": "Several continuous measures per subject, for trade-off reads.",
+    "source": "Illustrative spec table — a teaching set, not measured data.",
+    "format": "csv"
+  },
+  {
+    "id": "budget",
+    "file": "budget.csv",
+    "label": "An IT budget: plan against actual",
+    "shows": "Two values per category, for gap reads.",
+    "source": "Illustrative budget — a teaching set, not measured data.",
+    "format": "csv"
+  },
+  {
+    "id": "rhythm",
+    "file": "rhythm.csv",
+    "label": "Deploys by weekday and hour",
+    "shows": "A two-key grid of counts — the shape a punchcard or heatmap wants.",
+    "source": "Illustrative activity grid — a teaching set, not measured data.",
+    "format": "csv"
+  },
+  {
+    "id": "daily",
+    "file": "daily.csv",
+    "label": "A year of daily signups, by channel",
+    "shows": "A long daily series with several channels, for calendar and horizon forms.",
+    "source": "Illustrative daily series — a teaching set, not measured data.",
+    "format": "csv"
+  },
+  {
+    "id": "bridge",
+    "file": "bridge.csv",
+    "label": "An ARR bridge, start to finish",
+    "shows": "Signed contributions that must reconcile a start figure to an end figure.",
+    "source": "Illustrative bridge — a teaching set, not measured data.",
+    "format": "csv"
+  },
+  {
+    "id": "accounts",
+    "file": "accounts.csv",
+    "label": "420 accounts: seats against spend",
+    "shows": "Hundreds of points over two continuous measures, for density forms.",
+    "source": "Illustrative account table — a teaching set, not measured data.",
+    "format": "csv"
+  },
+  {
+    "id": "chase",
+    "file": "chase.csv",
+    "label": "Two vendors: revenue against margin, by quarter",
+    "shows": "Two measures tracked over time for two subjects — a connected-scatter shape.",
+    "source": "Illustrative vendor comparison — a teaching set, not measured data.",
+    "format": "csv"
+  },
+  {
+    "id": "releases",
+    "file": "releases.csv",
+    "label": "Every stable release, six frameworks",
+    "shows": "Event timestamps per category, for strip and beeswarm forms.",
+    "source": "Illustrative release log — a teaching set, not measured data.",
+    "format": "csv"
+  },
+  {
+    "id": "penguins",
+    "file": "penguins.csv",
+    "label": "Palmer Penguins",
+    "shows": "344 birds over three species and several body measures — the classic multi-measure, multi-group table.",
+    "source": "Horst, Hill & Gorman, palmerpenguins (CC0). Collected at Palmer Station, Antarctica LTER.",
+    "format": "csv"
+  },
+  {
+    "id": "gapminder",
+    "file": "gapminder.csv",
+    "label": "Gapminder, five-year intervals",
+    "shows": "1,704 rows: life expectancy, population and GDP per capita by country and continent, 1952-2007.",
+    "source": "Gapminder Foundation, via the gapminder R package (CC BY 4.0).",
+    "format": "csv"
+  },
+  {
+    "id": "quakes",
+    "file": "quakes.csv",
+    "label": "USGS earthquakes, M5.5+, 2025",
+    "shows": "512 events with magnitude, depth, coordinates and time — a dense continuous field.",
+    "source": "USGS Earthquake Catalog, public domain. Queried for M5.5+ during calendar 2025.",
+    "format": "csv"
+  },
+  {
+    "id": "us_state_density",
+    "file": "us_state_density.csv",
+    "label": "US state population density, 2020",
+    "shows": "51 regions with one value each — a ranked categorical read.",
+    "source": "US Census Bureau, 2020 Decennial Census. Public domain.",
+    "format": "csv"
+  },
+  {
+    "id": "acquisitions",
+    "file": "acquisitions.csv",
+    "label": "Large tech acquisitions, 2012-2025",
+    "shows": "19 deals with an announced value and a date.",
+    "source": "Widely reported announced deal values. Announced price, not price at close.",
+    "format": "csv"
+  },
+  {
+    "id": "saas_growth_margin",
+    "file": "saas_growth_margin.csv",
+    "label": "SaaS growth against cash margin",
+    "shows": "24 companies over two measures and six sectors.",
+    "source": "Company annual filings and press releases, FY as of early 2026. Rounded and approximate — sanity-check before external publication.",
+    "format": "csv"
+  },
+  {
+    "id": "cloud_share",
+    "file": "cloud_share.csv",
+    "label": "Cloud infrastructure market share",
+    "shows": "Shares of a whole across a few years.",
+    "source": "Synergy Research Group quarterly releases. Approximate, plus or minus 1-2 points — Synergy publishes rounded figures.",
+    "format": "csv"
+  },
+  {
+    "id": "language_ranks",
+    "file": "language_ranks.csv",
+    "label": "GitHub top language ranks, 2014-2024",
+    "shows": "Ranked positions over time — the shape a bump chart wants.",
+    "source": "GitHub Octoverse annual reports. Ranks approximate as published.",
+    "format": "csv"
+  },
+  {
+    "id": "funnel_by_source",
+    "file": "funnel_by_source.csv",
+    "label": "A funnel modelled per lead source",
+    "shows": "Stage conversion by source — a flow shape.",
+    "source": "Illustrative benchmark model, NOT measured data: rates set within ranges published in B2B funnel-benchmark reports.",
+    "format": "csv"
+  },
+  {
+    "id": "company_hq",
+    "file": "company_hq.csv",
+    "label": "Large tech companies by HQ and size",
+    "shows": "28 companies: coordinates plus an approximate size measure.",
+    "source": "Hand-compiled. Market caps approximate, early 2026, rounded — directional sizing only.",
+    "format": "csv"
+  }
+]

@@ -1,0 +1,9 @@
+source,target,leads
+Paid ads,Site visit,10000
+Organic,Site visit,7400
+Site visit,Trial,2400
+Site visit,Lapsed,15000
+Trial,Demo,600
+Trial,Churned,1800
+Demo,Won,82
+Demo,Lost,518

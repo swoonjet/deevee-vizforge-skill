@@ -1,0 +1,20 @@
+year,acquirer,target,value_bn,sector
+2012,Google,Motorola Mobility,12.5,Hardware
+2014,Facebook,WhatsApp,19.0,Social
+2015,Avago,Broadcom,37.0,Semiconductors
+2016,Dell,EMC,67.0,Infrastructure
+2016,Microsoft,LinkedIn,26.2,Social
+2018,Adobe,Marketo,4.75,Martech
+2019,IBM,Red Hat,34.0,Infrastructure
+2019,Salesforce,Tableau,15.7,Analytics
+2020,Salesforce,Slack,27.7,Collaboration
+2020,Nvidia,Mellanox,6.9,Semiconductors
+2022,AMD,Xilinx,35.0,Semiconductors
+2022,Oracle,Cerner,28.3,Health IT
+2022,Microsoft,Nuance,19.7,AI
+2022,Musk,Twitter,44.0,Social
+2023,Broadcom,VMware,69.0,Infrastructure
+2023,Microsoft,Activision Blizzard,68.7,Gaming
+2024,Cisco,Splunk,28.0,Analytics
+2025,HPE,Juniper Networks,14.0,Infrastructure
+2025,Synopsys,Ansys,35.0,Semiconductors
